@@ -1,0 +1,22 @@
+title:              revista 5ª esencia
+email:              to.crpsmajadahonda@grupo5.net
+description:        Tu lugar de reposo
+author:             Equipo 5ª Esencia CRPS Majadahonda
+baseurl:            "/revista5esencia"
+url:                "https://revista5esencia.github.io"
+
+# Social Profiles
+twitter_username:   
+github_username:    
+facebook_username:  
+instagram_username:  
+linkedin_username:
+
+# Build settings
+markdown:           kramdown
+paginate:           5
+paginate_path:      "/posts/page:num/"
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-sitemap ## Uncomment this line to silently generate a sitemaps.org compliant sitemap for your Jekyll site

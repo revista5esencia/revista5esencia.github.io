@@ -1,0 +1,43 @@
+---
+layout: page
+title: ¿Tienes algo que decirnos?
+description: Dinos lo que piensas
+background: '/assets/images/5a-esencia-logo-negro.jpg'
+form: true
+---
+<p> Envía tus comentarios y sugerencias a través del siguiente formulario: </p>
+<form nombre="sentMessage" id="contactForm" novalidate>
+  <div class="control-group">
+    <div class="form-group floating-label-form-group controls">
+      <label>Nombre</label>
+      <input type="text" class="form-control" placeholder="Nombre" id="nombre" required data-validation-required-message="Por favor introduce tu nombre.">
+      <p class="help-block text-danger"></p>
+    </div>
+  </div>
+  <div class="control-group">
+    <div class="form-group floating-label-form-group controls">
+      <label>Dirección de correo</label>
+      <input type="email" class="form-control" placeholder="Dirección de correo" id="email" required data-validation-required-message="Por favor, introduce tu correo electrónico.">
+      <p class="help-block text-danger"></p>
+    </div>
+  </div>
+  <div class="control-group">
+    <div class="form-group col-xs-12 floating-label-form-group controls">
+      <label>Teléfono</label>
+      <input type="tel" class="form-control" placeholder="Número de teléfono" id="teléfono" required data-validation-required-message="Por favor introduce tu teléfono.">
+      <p class="help-block text-danger"></p>
+    </div>
+  </div>
+  <div class="control-group">
+    <div class="form-group floating-label-form-group controls">
+      <label>Mensaje</label>
+      <textarea rows="5" class="form-control" placeholder="Mensaje" id="mensaje" required data-validation-required-message="Por favor escribe un mensaje."></textarea>
+      <p class="help-block text-danger"></p>
+    </div>
+  </div>
+  <br>
+  <div id="success"></div>
+  <div class="form-group">
+    <button type="enviar" class="btn btn-primary" id="sendMessageButton">Enviar</button>
+  </div>
+</form>
