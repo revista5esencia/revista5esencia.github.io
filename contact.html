@@ -5,6 +5,7 @@ description: Cuéntanos lo que piensas
 background: '/assets/images/5a-esencia-logo-negro.jpg'
 form: true
 ---
+action="https://formspree.io/f/{{ site.formspree.form_id }}"
 <p> Envía tus comentarios y sugerencias a través del siguiente formulario: </p>
 <form nombre="sentMessage" id="contactForm" novalidate>
   <div class="control-group">
@@ -41,3 +42,5 @@ form: true
     <button type="enviar" class="btn btn-primary" id="sendMessageButton">Enviar</button>
   </div>
 </form>
+<textarea name="message" rows="5" class="form-control" placeholder="Message" id="message" required
+                data-validation-required-message="Please enter a message."></textarea>
