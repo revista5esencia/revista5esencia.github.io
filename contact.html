@@ -5,9 +5,8 @@ description: Cuéntanos lo que piensas
 background: '/assets/images/5a-esencia-logo-negro.jpg'
 form: true
 ---
-action="https://formspree.io/f/{{ site.formspree.form_id }}"
 <p> Envía tus comentarios y sugerencias a través del siguiente formulario: </p>
-<form nombre="sentMessage" id="contactForm" novalidate>
+<form id="contactform" name="sentMessage" id="contactForm" action="https://formspree.io/f/xdkndnao" method="POST">
   <div class="control-group">
     <div class="form-group floating-label-form-group controls">
       <label>Nombre</label>
@@ -26,13 +25,13 @@ action="https://formspree.io/f/{{ site.formspree.form_id }}"
     <div class="form-group col-xs-12 floating-label-form-group controls">
       <label>Teléfono</label>
       <input type="tel" class="form-control" placeholder="Número de teléfono" id="teléfono" required data-validation-required-message="Por favor introduce tu teléfono.">
-      <p class="help-block text-danger"></p>
+      <p class="help-block text-danger"></p
     </div>
   </div>
   <div class="control-group">
     <div class="form-group floating-label-form-group controls">
       <label>Mensaje</label>
-      <textarea rows="5" class="form-control" placeholder="Mensaje" id="mensaje" required data-validation-required-message="Por favor escribe un mensaje."></textarea>
+      <textarea name="message" rows="5" class="form-control" placeholder="Mensaje" id="mensaje" required data-validation-required-message="Por favor escribe un mensaje."></textarea>
       <p class="help-block text-danger"></p>
     </div>
   </div>
@@ -42,5 +41,18 @@ action="https://formspree.io/f/{{ site.formspree.form_id }}"
     <button type="enviar" class="btn btn-primary" id="sendMessageButton">Enviar</button>
   </div>
 </form>
-<textarea name="message" rows="5" class="form-control" placeholder="Message" id="message" required
-                data-validation-required-message="Please enter a message."></textarea>
+    <!--the following are optional fields to customize how submissions are processed-->
+    <!--The first sets the subject of Formspree notification emails.-->
+    <!--The second catches (some) spambots.-->
+
+  <!-- <input type="hidden" name="_subject" value="Sent from blog Contact form." /> -->
+  <!-- <input type="text" name="_gotcha" style="display:none" /> -->
+
+    <!--End of optional fields.-->
+
+  <br>
+  <div id="success"></div>
+  <div class="form-group">
+    <input type="submit" class="btn btn-primary" value="Send">
+  </div>
+</form>
